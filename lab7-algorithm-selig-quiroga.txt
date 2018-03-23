@@ -1,0 +1,60 @@
+#Programmers: Noah Selig & Sebastian Quiroga
+#Lab 7 Algorithm
+
+
+#Functions's purpose: read in a file name from the user and return it once they give one that exists
+#Parameters: None
+#Return: file name
+
+1.) Define function for user to name file
+2.) Establish valid file name variable that is equal to True.
+3.) Create while loop using Try/Except.
+4.) Try: user file name = input ("Enter the name of the file: ")
+        open file user
+        return user file name
+    Except FileNotFoundError:
+    print ("This file does not exist")
+
+
+#Function's purpose: Process the file
+#Parameters: file name of file to read from
+#Return: The maximum profit
+
+1.) Open the user selected file for reading
+2.) Create variable for reading lines and read lines of selected data file.
+3.) Create a count variable = 0 for the max profit loop.
+4.) For loop for the lines being read.
+5.) Separate the lines in to tokens with "," as the delimiter. / Convert budget/ gross to float
+6.) profit = gross - budget
+if profit >= max_profit:
+            max_profit = profit
+            title count variable  = title
+return max profit and title count variable
+7.) Close the user selected file
+
+
+
+#Function's purpose: Process the file
+#Parameters: file name of file to read from, file name of file to write to
+#Return: None
+
+1.) Create variable for function to process the in file for reading
+2.)Create variable for function to write to the variable the user chooses.
+3.) Read lines of the in file
+4.) 4.) For loop for the lines being read.
+5.) Separate the lines in to tokens with "," as the delimiter. / Convert budget/ gross to float
+6.) profit = gross - budget
+7.) print the release date, title, and profit of all films to the out file
+8.) close both the in and out files
+
+
+#Function's purpose: main
+#Parameters: None
+#Return: None
+
+1.) print ("This program is designed for the user to select an existing file name and it will read and process the file for films. It will output the highest profit, as well as all the profits in a new file named by the user.")
+2.) create a variable to call the user file name function and print the variable
+3.) create a variable to call the profit function with the parameter being the user file name function
+4.) create a variable to have the user input the new name of the file the user wants to store the new data in
+5.) call the last user file in and out data
+6.) Call the main
